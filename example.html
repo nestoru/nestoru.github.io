@@ -160,5 +160,27 @@ img.tbBtn {
 </tbody>
 </table>
 </form>
+<hr />
+<p style="text-align:center;">[&nbsp;<a href="http://htmlchess.sourceforge.net" title="Go to Home Page" target="_blank">Home</a> | <a href="http://sourceforge.net/projects/htmlchess/forums" title="Go to Forums" target="_blank">Forums</a> | <a href="https://sourceforge.net/projects/htmlchess/forums/forum/1182797/topic/3792347" title="Send a comment" target="_blank">Send a comment</a>&nbsp;]</p>
+<!--
+<hr />
+<h3 style="text-align:center;">Running code within the "chess" object.</h3>
+<p style="text-align:center;">Please uncomment the function chess.runInside(<em>sCode</em>) to execute your code.<br />
+<textarea rows="10" cols="55" id="debugArea" onkeyup="if(event.ctrlKey&&event.shiftKey&&event.keyCode===32){chess.runInside(this.value);}">
+/**
+* Javascript Console.
+* Press Ctrl+Shift+Space to run code
+* within the "chess" object.
+*/
+
+var sRappr = "";
+for (nBoardX = 0; nBoardX &lt; 12; nBoardX++) {
+	var nBoardY = 0;
+	for (nBoardY = 0; nBoardY &lt; 10; nBoardY++) { sRappr += (etc.aBoard[nBoardX * 10 + nBoardY]) + ", "; }
+	sRappr = sRappr.substr(0, sRappr.length - 2) + "\n";
+}
+alert("This is the numeric rappresentation of the chessboard:\n\n" + sRappr);
+</textarea></p>
+-->
 </body>
 </html>
