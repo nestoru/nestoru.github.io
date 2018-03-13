@@ -1,0 +1,74 @@
+Privacy Notice
+
+Effective Date:  August 13, 2018
+
+This privacy notice discloses the privacy practices for NestorUrquiza.com. This privacy notice applies solely to information collected by this website and software or hardware product that NestorUrquiza.com builds and distributes. It will notify you of the following:
+
+What information we collect;
+With whom it is shared;
+How it can be corrected;
+How it is secured;
+How policy changes will be communicated; and
+How to address concerns over misuse of personal data.
+ 
+
+Information Collection, Use, and Sharing 
+
+We do not collect any information in this site neither in the applications we build. All of our applications are built on top of existing services that you as a user are already using. We do not request access that such existing service providers do not require us to request in order to serve you with gadgets that improve your way of living. We only have access to/collect information that you voluntarily give us via product service agreement. We do store and therefore we do not sell or rent this information to anyone. 
+
+If you contact us we will use your information to respond to you, regarding the reason you contacted us. We will not share your information with any third party outside of our organization, other than as necessary to fulfill your request, e.g., to ship an order.
+
+We will never contact you via email in the future to tell you about specials, new products or services.
+
+Your Access to and Control Over Information 
+
+We do not keep data about you and therefore there is no need for you to:
+
+See what data we have about you.
+Change/correct any data we have about you.
+Have us delete any data we have about you.
+
+But if you like you can:
+
+Express any concern you have about our use of your data
+ 
+
+Registration 
+
+There is registration needed to access our services or use our products. Therefore there is no information we ask neither collect.
+
+Orders 
+
+When you buy any of our solutions you do so through the existing ecosystem of third party providers. We do not keep any information from any of our customers.
+
+Sharing 
+
+Since we do not collect any information we do not share anything with our partners and advertisers. This is not linked to any personal information that can identify any individual person.
+
+Security 
+
+Since we work adding functionality to existing service providers we are covered by the security rules imposed by them in terms of best practices for coding, review and publishing steps. This includes taking precautions to not save your information anywhere other than in resources you own and only you can access.
+
+We do not collect sensitive information (such as credit card data), that information is handled (if applicable) by your current service provider.
+
+Cookies 
+
+We use "cookies" on this site. A cookie is a piece of data stored on a site visitor's hard drive to help us improve your access to our site and identify repeat visitors to our site. We do not use cookies to log in or register because we do not store any customer data. Cookies can also enable us to track and target the interests of our users to enhance their experience on our site. Usage of a cookie is in no way linked to any personally identifiable information on our site.
+
+Links 
+
+This web site contains links to other sites. Please be aware that we are not responsible for the content or privacy practices of such other sites. We encourage our users to be aware when they leave our site and to read the privacy statements of any other site that collects personally identifiable information.
+
+Surveys & Contests 
+
+We never send any survey nor contests. If you receive those claiming to be us please report it immediately via email.
+
+Notification of Changes
+
+We submit our Privacy Policy to service providers you are already working with. With each version of any product we build we ship a privacy policy.
+
+Other Provisions as Required by Law
+
+Numerous other provisions and/or practices may be required as a result of laws, international treaties, or industry practices. It is up to you to determine what additional practices must be followed and/or what additional disclosures are required. Please take special notice of the California Online Privacy Protection Act (CalOPPA), which is frequently amended and now includes a disclosure requirement for “Do Not Track” signals. we aim at compliance with GDPR and in general with any other privacy law in the US and abroad.
+
+If you feel that we are not abiding by this privacy policy, you should contact us immediately via email at nestor at nestorurquiza.com.
