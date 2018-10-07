@@ -7,7 +7,7 @@ const url = 'https://www.mocky.io/v2/5185415ba171ea3a00704eed?mocky-delay=2s';
 const jsonDisplay = document.querySelector('#jsonDisplay');
 fetch(url).then(function(response) {
   response.text().then(function(text) {
-    jsonDisplay.textContent = text;
+    jsonDisplay.innerHTML = text;
   });
 });
 </script>
