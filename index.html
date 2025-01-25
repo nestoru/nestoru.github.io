@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Nestor Urquiza - Personal Website">
     <meta name="author" content="Nestor Urquiza">
     <link rel="icon" href="img/nu-black.ico">
@@ -24,6 +23,10 @@
       .downloads-table th {
         color: #777;
       }
+      .downloads-table .demo-preview {
+        cursor: pointer;
+        max-width: 200px;
+      }
       #main-content > div {
         display: none;
       }
@@ -32,6 +35,41 @@
       }
       .main-content-wrapper {
         min-height: calc(100vh - 200px);
+      }
+      .modal-overlay {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+      .modal-overlay.active {
+        display: flex;
+      }
+      .modal-content {
+        position: relative;
+        max-width: 90%;
+        max-height: 90vh;
+      }
+      .modal-close {
+        position: absolute;
+        top: -40px;
+        right: -40px;
+        color: white;
+        font-size: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 10px;
+      }
+      .modal-image {
+        max-width: 100%;
+        max-height: 90vh;
       }
     </style>
     <!-- Google analytics -->
@@ -134,12 +172,19 @@
                     <tr>
                       <th>App Name</th>
                       <th>Description</th>
+                      <th>Preview</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>Outlook Message-ID Plugin</td>
-                      <td>Right-click on an Outlook email and get an option to copy its Message-Id. Right click on an Outlook folder and get an option to search in that folder for a Message-Id. <a href="./downloads/outlookmessageid-trial.zip" download>Download a trial</a> that allows you to perform once each operation every time you open Outlook and if you need the unlimited version then contact me for pricing and payment options.</td>
+                      <td>
+                        <p>Right-click on an Outlook email and get an option to copy its Message-Id. Right click on an Outlook folder and get an option to search in that folder for a Message-Id.</p>
+                        <p><a href="./downloads/outlookmessageid-trial.zip" download>Download a trial</a> that allows you to perform once each operation every time you open Outlook and if you need the unlimited version then contact me for pricing and payment options.</p>
+                      </td>
+                      <td>
+                        <img src="./img/outlookmessageid-demo.gif" alt="Plugin Demo" class="demo-preview" onclick="openModal(this.src)">
+                      </td>
                     </tr>
                   </tbody>
                 </table>
@@ -148,6 +193,14 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Modal Overlay -->
+      <div class="modal-overlay" id="imageModal" onclick="closeModal()">
+        <div class="modal-content">
+          <button class="modal-close" onclick="closeModal()">&times;</button>
+          <img class="modal-image" src="" alt="Preview">
         </div>
       </div>
 
@@ -202,6 +255,33 @@
         // Set initial view based on URL
         const viewId = location.pathname === '/' ? 'home' : location.pathname.slice(1);
         updateUI(viewId);
+      });
+
+      // Modal handling
+      function openModal(imageSrc) {
+        const modal = document.getElementById('imageModal');
+        const modalImage = modal.querySelector('.modal-image');
+        modalImage.src = imageSrc;
+        modal.classList.add('active');
+      }
+
+      function closeModal() {
+        const modal = document.getElementById('imageModal');
+        modal.classList.remove('active');
+      }
+
+      // Close modal when clicking outside the image
+      document.getElementById('imageModal').addEventListener('click', function(e) {
+        if (e.target === this) {
+          closeModal();
+        }
+      });
+
+      // Close modal with escape key
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
       });
     </script>
   </body>
