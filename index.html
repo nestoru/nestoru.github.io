@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Nestor Urquiza - Personal Website">
     <meta name="author" content="Nestor Urquiza">
     <link rel="icon" href="img/nu-black.ico">
@@ -21,7 +22,6 @@
         border: 1px solid #ddd;
       }
       .downloads-table th {
-        background-color: #f5f5f5;
         color: #777;
       }
       #main-content > div {
@@ -179,7 +179,7 @@
           document.querySelector(`[data-view="${viewId}"]`).parentElement.classList.add('active');
           
           // Update URL without page reload
-          history.pushState({}, '', viewId === 'home' ? '/' : '/' + viewId);
+          history.pushState({view: viewId}, '', viewId === 'home' ? '/' : '/' + viewId);
         }
 
         // Handle navigation clicks
@@ -193,10 +193,21 @@
         // Handle direct URLs and browser back/forward
         function handleUrlChange() {
           const path = window.location.pathname.substring(1);
-          showView(path || 'home');
+          const viewId = path || 'home';
+          if (document.getElementById(viewId + '-view')) {
+            showView(viewId);
+          }
         }
 
-        window.addEventListener('popstate', handleUrlChange);
+        window.addEventListener('popstate', function(event) {
+          if (event.state && event.state.view) {
+            showView(event.state.view);
+          } else {
+            handleUrlChange();
+          }
+        });
+
+        // Initial load
         handleUrlChange();
       });
     </script>
