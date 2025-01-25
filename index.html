@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="Nestor Urquiza - Personal Website">
     <meta name="author" content="Nestor Urquiza">
     <link rel="icon" href="img/nu-black.ico">
@@ -15,6 +14,7 @@
       .downloads-table {
         width: 100%;
         margin-top: 20px;
+        margin-bottom: 100px;
       }
       .downloads-table th, .downloads-table td {
         padding: 10px;
@@ -22,12 +22,16 @@
       }
       .downloads-table th {
         background-color: #f5f5f5;
+        color: #777;
       }
       #main-content > div {
         display: none;
       }
       #main-content > div.active {
         display: block;
+      }
+      .main-content-wrapper {
+        min-height: calc(100vh - 200px);
       }
     </style>
     <!-- Google analytics -->
@@ -75,71 +79,73 @@
         </div><!-- /.container-fluid -->
       </nav>
       
-      <div id="main-content">
-        <div id="home-view" class="active">
-          <div class="row">
-            <div class="col-md-2">
+      <div class="main-content-wrapper">
+        <div id="main-content">
+          <div id="home-view" class="active">
+            <div class="row">
+              <div class="col-md-2">
+              </div>
+              <div class="col-md-8" align="center">
+                <h2>Nestor Urquiza</h2>
+                <p>Nestor Urquiza was born in Santa Clara, Cuba.  He went to a Science Institute (IPVCE Ernesto Guevara de la Serna) for his secondary education.  
+                  He studied Microelectronics at the High Electro-Mechanical Institute in Sofia, Bulgaria and he later got his Science Bachelor Degree in Electronics Engineering in Cuba from an international acredited university (Universidad Central de Las Villas or UCLV). 
+                  Nestor got several certifications in the RF, IT and Security fields. 
+                  He lived in Argentina for almost five years, in the United States for 16 years and most recently in Spain. 
+                  Nestor obtained his Master of Business Administration in 2016 from Florida International University (FIU) and holds the (ISC)2 CISSP Certification.</p>
+
+                <p>He started working with software in the early 1980s. 
+                  He has been involved from low level microelectronics design up to enterprise software development. 
+                  Nestor has worked as Independent Consultant helping several companies with strategy alignment, analytics driven growth marketing, regulatory compliance, physical/logical/administrative security, business processes, technology stacks, on premises and cloud infrastructure, team building and hiring. He has also worked inside Corporations as Chief Technology/Information/Product/Security Officer, VP of Technology, Software Architect, Hardware Engineer, System Administrator, Network Engineer, Database Administrator, Software Engineer, Penetration Tester, Project Manager, Business Analyst and Product Manager. 
+                </p>
+
+                <p>Nestor Urquiza writes about software in <a href="http://thinkinginsoftware.blogspot.com/">Thinking In Software Blog</a>. He is actively involved in validating technologies and methodologies to increase productivity across the entire Company pipeline.</p>
+                <p>He is currently working in a <a href="https://thinkinginsoftware.blogspot.com/secure-translations">secure language translation</a> platform.</p>
+                <p>Nestor currently lives in Madrid with his wife, two sons and daughter. He likes soccer and never misses a Boca Juniors match.</p>
+                <p>
+                  <a href="https://www.paypal.com/donate/?hosted_button_id=58F9TDDRBND4L">
+                    <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal">
+                  </a>
+                </p>
+                <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="56f380f5-5145-49aa-8dda-9d885812d7f4"></div>
+                  <script type="text/javascript">
+                    (function() {
+                      var s = document.createElement('script');
+                      s.type = 'text/javascript';
+                      s.async = true;
+                      s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
+                      var o = document.getElementsByTagName('script')[0];
+                      o.parentNode.insertBefore(s, o);
+                    })();
+                </script>
+              </div> 
+              <div class="col-md-2">	    		    	    
+              </div>    			       
             </div>
-            <div class="col-md-8" align="center">
-              <h2>Nestor Urquiza</h2>
-              <p>Nestor Urquiza was born in Santa Clara, Cuba.  He went to a Science Institute (IPVCE Ernesto Guevara de la Serna) for his secondary education.  
-                He studied Microelectronics at the High Electro-Mechanical Institute in Sofia, Bulgaria and he later got his Science Bachelor Degree in Electronics Engineering in Cuba from an international acredited university (Universidad Central de Las Villas or UCLV). 
-                Nestor got several certifications in the RF, IT and Security fields. 
-                He lived in Argentina for almost five years, in the United States for 16 years and most recently in Spain. 
-                Nestor obtained his Master of Business Administration in 2016 from Florida International University (FIU) and holds the (ISC)2 CISSP Certification.</p>
-
-              <p>He started working with software in the early 1980s. 
-                He has been involved from low level microelectronics design up to enterprise software development. 
-                Nestor has worked as Independent Consultant helping several companies with strategy alignment, analytics driven growth marketing, regulatory compliance, physical/logical/administrative security, business processes, technology stacks, on premises and cloud infrastructure, team building and hiring. He has also worked inside Corporations as Chief Technology/Information/Product/Security Officer, VP of Technology, Software Architect, Hardware Engineer, System Administrator, Network Engineer, Database Administrator, Software Engineer, Penetration Tester, Project Manager, Business Analyst and Product Manager. 
-              </p>
-
-              <p>Nestor Urquiza writes about software in <a href="http://thinkinginsoftware.blogspot.com/">Thinking In Software Blog</a>. He is actively involved in validating technologies and methodologies to increase productivity across the entire Company pipeline.</p>
-              <p>He is currently working in a <a href="https://thinkinginsoftware.blogspot.com/secure-translations">secure language translation</a> platform.</p>
-              <p>Nestor currently lives in Madrid with his wife, two sons and daughter. He likes soccer and never misses a Boca Juniors match.</p>
-              <p>
-                <a href="https://www.paypal.com/donate/?hosted_button_id=58F9TDDRBND4L">
-                  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" alt="paypal">
-                </a>
-              </p>
-              <div data-iframe-width="270" data-iframe-height="270" data-share-badge-id="56f380f5-5145-49aa-8dda-9d885812d7f4"></div>
-                <script type="text/javascript">
-                  (function() {
-                    var s = document.createElement('script');
-                    s.type = 'text/javascript';
-                    s.async = true;
-                    s.src = '//cdn.youracclaim.com/assets/utilities/embed.js';
-                    var o = document.getElementsByTagName('script')[0];
-                    o.parentNode.insertBefore(s, o);
-                  })();
-              </script>
-            </div> 
-            <div class="col-md-2">	    		    	    
-            </div>    			       
           </div>
-        </div>
-        
-        <div id="downloads-view">
-          <div class="row">
-            <div class="col-md-2">
-            </div>
-            <div class="col-md-8" align="center">
-              <h2>Downloads</h2>
-              <table class="downloads-table">
-                <thead>
-                  <tr>
-                    <th>App Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Outlook Message-ID Plugin</td>
-                    <td>Right-click on an Outlook email and get an option to copy its Message-Id. Right click on an Outlook folder and get an option to search in that folder for a Message-Id. <a href="./downloads/outlookmessageid-trial.zip" download>Download a trial</a> that allows you to perform once each operation every time you open Outlook and if you need the unlimited version then contact me for pricing and payment options.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-md-2">
+          
+          <div id="downloads-view">
+            <div class="row">
+              <div class="col-md-2">
+              </div>
+              <div class="col-md-8" align="center">
+                <h2>Downloads</h2>
+                <table class="downloads-table">
+                  <thead>
+                    <tr>
+                      <th>App Name</th>
+                      <th>Description</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Outlook Message-ID Plugin</td>
+                      <td>Right-click on an Outlook email and get an option to copy its Message-Id. Right click on an Outlook folder and get an option to search in that folder for a Message-Id. <a href="./downloads/outlookmessageid-trial.zip" download>Download a trial</a> that allows you to perform once each operation every time you open Outlook and if you need the unlimited version then contact me for pricing and payment options.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="col-md-2">
+              </div>
             </div>
           </div>
         </div>
