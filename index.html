@@ -224,11 +224,9 @@
       // View handling
       document.addEventListener('DOMContentLoaded', function() {
         function updateUI(viewId) {
-          // Update view visibility
           document.querySelectorAll('#main-content > div').forEach(div => div.classList.remove('active'));
           document.getElementById(viewId + '-view').classList.add('active');
           
-          // Update navigation active state
           document.querySelectorAll('.nav li').forEach(li => li.classList.remove('active'));
           const navItem = document.querySelector(`[data-view="${viewId}"]`);
           if (navItem) {
@@ -242,19 +240,18 @@
             e.preventDefault();
             const viewId = this.dataset.view;
             updateUI(viewId);
-            history.pushState({viewId: viewId}, '', viewId === 'home' ? '/' : '/' + viewId);
+            location.hash = viewId === 'home' ? '' : viewId;
           });
         });
 
-        // Handle browser back/forward and initial load
-        window.addEventListener('popstate', function() {
-          const viewId = location.pathname === '/' ? 'home' : location.pathname.slice(1);
-          updateUI(viewId);
-        });
+        // Handle initial load and hash changes
+        function handleHash() {
+          const hash = location.hash.slice(1);
+          updateUI(hash || 'home');
+        }
 
-        // Set initial view based on URL
-        const viewId = location.pathname === '/' ? 'home' : location.pathname.slice(1);
-        updateUI(viewId);
+        window.addEventListener('hashchange', handleHash);
+        handleHash(); // Handle initial load
       });
 
       // Modal handling
